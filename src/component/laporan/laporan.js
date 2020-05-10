@@ -48,7 +48,7 @@ export default class Pembelian extends Component {
     }
     return (
       <View style={styles.MainContainer_For_Show_StudentList_Activity}>
-        <View style={{ alignSelf: "center", marginTop: 200 }}>
+        <View style={{ alignSelf: "center", marginTop: 100 }}>
           <Image style={styles.imageFitView} source={Img.soon} />
         </View>
       </View>
@@ -66,6 +66,6 @@ const styles = StyleSheet.create({
   },
   imageFitView: {
     width: 400,
-    height: 250,
+    height: 400,
   },
 });
