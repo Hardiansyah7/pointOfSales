@@ -3,7 +3,7 @@ import { View, StyleSheet, Image } from "react-native";
 import { Container } from "native-base";
 import { StackActions, NavigationActions } from "react-navigation";
 import images from "../assets/images";
-import { BarIndicator } from "react-native-indicators";
+import { DotIndicator } from "react-native-indicators";
 
 export default class splash extends Component {
   componentDidMount() {
@@ -26,10 +26,10 @@ export default class splash extends Component {
       <Container style={styles.container}>
         <View style={{ width: 200, height: 400 }}>
           <Image source={images.logoLogin} style={styles.imageFitView} />
-          <View style={{ flex: 1, paddingBottom: 50 }}>
-            <BarIndicator
+          <View style={{ flex: 1 }}>
+            <DotIndicator
               color="white"
-              size={50}
+              size={25}
               style={{ justifyContent: "center", alignItems: "flex-end" }}
             />
           </View>
